@@ -25,7 +25,6 @@ define Package/$(PKG_NAME)/postinst
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	( . /etc/uci-defaults/luci-dc1 ) && rm -f /etc/uci-defaults/luci-dc1
 fi
-chmod a+x $${IPKG_INSTROOT}/usr/bin/dc1/* >/dev/null 2>&1
 exit 0
 endef
 
